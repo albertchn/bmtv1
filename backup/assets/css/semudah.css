@@ -1,0 +1,253 @@
+/* 
+
+KETENTUAN PENAMAAN KELAS 
+- Konsultasi dengan yang lainnya jika ingin membuat kelas baru
+- Nama kelas awali dengan smd-nama-kelas , misalnya smd-btn-primary / smd-heading-primary 
+- Usahakan tidak menggunakan 1 2 3 (smd-btn-1), tetapi (smd-btn-primary / smd-btn-secondary)
+
+*/
+
+/* ------------------------------------------- PALLET ------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --color-primary: #003974;
+    --color-secondary: #3B8BCB;
+    --color-alert: #EA4335;
+    --color-success: ;
+    --color-neutral: #000000;
+    --color-mid-neutral: #818289;
+    --color-low-neutral: #E0E0E0;
+    --color-mid-light: #F3F3F4;
+    --color-light: #FFFFFF;
+
+    --font-primary: ;
+    --font-secondary: ;
+
+    --size-head: 64px;
+    --size-subhead: 32px;
+    --size-desc: 16px;
+    --size-note: 12px;
+}
+
+/* ------------------------------------------- ALL ------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------- BUTTON ------------------------------------------- */
+
+.smd-btn-primary {
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    color: var(--color-light);
+    border: 2px solid transparent;
+    background-color: var(--color-primary);
+}
+
+.smd-btn-primary-fluid {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    color: var(--color-light);
+    border: 2px solid transparent;
+    background-color: var(--color-primary);
+}
+
+.smd-btn-primary:hover, .smd-btn-primary-fluid:hover {
+    color: var(--color-light);
+    border: 2px solid transparent;
+    background-color: var(--color-primary);
+}
+
+.smd-btn-secondary {
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-light);
+}
+
+.smd-btn-secondary-fluid {
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-light);
+}
+
+.smd-btn-secondary:hover, .smd-btn-secondary-fluid:hover {
+    color: var(--color-light);
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-primary);
+    transition: .3s;
+}
+
+/* ------------------------------------------- CARD ------------------------------------------- */
+
+
+
+/* ------------------------------------------- FORM ------------------------------------------- */
+
+.smd-input {
+    width: 100%;
+    height: 48px;
+    padding: 0px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-mid-light);
+}
+
+.smd-input:focus {
+    outline: 1px solid var(--color-secondary);
+}
+
+.smd-input-pw {
+    position: relative;
+}
+
+.smd-input-pw .smd-input {
+    padding-right: 46px;
+}
+
+.smd-input-pw .iconify {
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+
+.smd-input-pw .iconify:hover {
+    cursor: pointer;
+    color: var(--color-secondary);
+}
+
+/* 
+<div class="smd-input-pw">
+    <input type="password" class="smd-input" name="" id="password1" required>
+    <span id="btn-showhide1" onclick="change1()">
+        <span class="iconify" data-icon="fluent:eye-show-20-regular" data-inline="false"></span>
+    </span>
+</div>
+*/
+
+
+/* ------------------------------------------- TEXT ------------------------------------------- */
+
+.smd-link {
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+.smd-link:hover {
+    color: var(--color-primary);
+}
+
+.smd-head {
+    font-weight: 700;
+    font-size: var(--size-head);
+}
+
+.smd-subhead {
+    font-weight: 700;
+    font-size: var(--size-subhead);
+}
+
+.smd-desc {
+    color: var(--color-neutral);
+    font-size: var(--size-desc);
+}
+
+.smd-note {
+    color: var(--color-neutral);
+    font-size: var(--size-note);
+}
+
+.smd-desc-secondary {
+    opacity: 60%;
+    color: var(--color-neutral);
+    font-size: var(--size-desc);
+}
+
+/* ------------------------------------------- TOGGLE ------------------------------------------- */
+
+.toggle-switch-container {
+    position: relative;
+    padding: 2px;
+    height: 24px;
+    width: 46px;
+    border-radius: 50px;
+    background-color: var(--color-mid-neutral);
+    /* background-color: var(--color-mid-light); */
+    opacity: 10%;
+    vertical-align: middle;
+    display: inline-block;
+    /* box-shadow: 0px 0px 8px 0px var(--color-neutral); */
+}
+
+.toggle-switch {
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-color: var(--color-light);
+    transition: .5s;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 0px #000000;
+}
+
+.toggle-switch-container .toggle-switch .sun {
+    top: -3px;
+    left: 5px;
+    position: relative;
+    width: 10px;
+    height: 10px;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked ~ .toggle-switch {
+    margin-left: 22px;
+    transition: .5s;
+}
+
+.toggle-switch-container ~ #toggle:checked {
+    background-color: var(--color1);
+}

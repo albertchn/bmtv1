@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-primary: #3F83F8;
+    --bg-primary-hover: #1C64F2;
+
+    --bg-secondary: #F1F5F9;
+    --bg-secondary-hover: #E2E8F0;
+    
+    --bg-third: #FFFFFF;
+
+    --color-primary: #1A202E;
+    --color-secondary: #7E8C9F;
+    --color-third: #3b2a2a;
+
+    --excel-color:  #008000;
+    --alert-color: #EA4335;
+
+
+    --font-size1: 32px;
+    --font-size2: 14px;
+    --font-size3: 12px;
+}
+
+
+body {
+    color: var(--color-primary);
+}
+
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    padding: 32px 16px;
+
+    top: 0;
+    position: sticky;
+
+    float: left;
+    display: grid;
+    grid-template-rows: auto 100px;
+
+    background-color: var(--bg-secondary);
+}
+
+.sidebar .profile {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: var(--bg-secondary-hover);
+
+    display: grid;
+    grid-template-columns: 52px auto;
+}
+
+.sidebar .profile .gambar {
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    overflow: hidden;
+    border-radius: 50px;
+    background-color: var(--bg-third);
+}
+
+.sidebar .profile .gambar img {
+    width: 100%;
+}
+
+.sidebar .profile .nama {
+    line-height: 1.2rem;
+    font-weight: 500;
+    font-size: var(--font-size2);
+}
+
+.sidebar .profile .nama p {
+    margin-bottom: 0px;
+}
+
+.sidebar .profile .nama p span {
+    font-size: var(--font-size3);
+    color: var(--color-secondary);
+}
+
+
+
+.sidebar ul {
+    margin-top: 32px;
+    padding: 0px;
+}
+
+.sidebar ul p {
+    margin-bottom: 0px;
+    font-size: var(--font-size3);
+    color: var(--color-secondary);
+}
+
+.sidebar ul a {
+    font-weight: 500;
+    text-decoration: none;
+
+    font-size: var(--font-size2);
+    color: var(--color-primary);
+}
+
+.sidebar ul li {
+    width: 100%;
+    padding: 8px 8px;
+    border-radius: 4px;
+    list-style: none;
+}
+
+.sidebar ul li:hover {
+    background-color: var(--bg-secondary-hover);
+}
+
+.sidebar ul li .iconify {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+
+    margin-top: -3px;
+    vertical-align: middle;
+}
+
+.sidebar ul .side-active {
+    color: var(--bg-primary);
+    background-color: var(--bg-secondary);
+}
+
+.sidebar ul .side-active:hover {
+    color: var(--color-third);
+    background-color: var(--bg-primary);
+
+    color: var(--bg-primary);
+    background-color: var(--bg-secondary-hover);
+}
+
+
+
+.sidebar .copyright {
+    text-align: center;
+}
+
+.sidebar .copyright p {
+    margin-bottom: 0px;
+
+    font-size: var(--font-size3);
+    color: var(--color-secondary);
+}
+
+.sidebar .copyright p a {
+    text-decoration: none;
+}
+
+.sidebar .copyright img {
+    margin: 12px 0px;
+    width: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+main {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 240px;
+}
+
+main .title {
+    font-weight: 500;
+    font-size: var(--font-size1);
+    color: var(--color-primary);
+}
+
+main .container {
+    padding: 0px 32px;
+}
+
+
+
+
+
+
+
+
+
+
+form {
+    width: 480px;
+    margin-top: 32px;
+}
+
+.form-group {
+    margin-top: 12px;
+}
+
+.form-group label, .form-group input, .form-group span, .form-group button {
+    margin: 12px 0px;
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: 4px;
+}
+
+.row {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 49% 49%;
+}
+
+.form-group label {
+    color: var(--color-primary);
+    font-size: var(--font-size2);
+}
+
+.form-group input {
+    width: 100%;
+    height: 48px;
+    padding: 0px 12px;
+    
+    font-size: var(--font-size3);
+    background-color: var(--bg-secondary);
+}
+
+.form-group input:hover {
+    outline: none;
+    border: 1px solid var(--bg-primary);
+}
+
+.form-group input:focus {
+    outline: none;
+    border: 1px solid var(--bg-primary);
+}
+
+.form-group #alert {
+    color: var(--alert-color);
+}
+
+.form-group button {
+    width: 100%;
+    height: 48px;
+    margin-top: 12px;
+
+    color: var(--bg-third);
+    background-color: var(--bg-primary);
+}
+
+.form-group button:hover {
+    cursor: pointer;
+    background-color: var(--bg-primary-hover);
+}
+
+
+.row-form {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: auto auto;
+}

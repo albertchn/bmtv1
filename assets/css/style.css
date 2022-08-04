@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-primary: #3F83F8;
+    --bg-primary-hover: #1C64F2;
+
+    --bg-secondary: #F1F5F9;
+    --bg-secondary-hover: #E2E8F0;
+    
+    --bg-third: #FFFFFF;
+
+    --color-primary: #1A202E;
+    --color-secondary: #7E8C9F;
+    --color-third: #3b2a2a;
+
+    --excel-color:  #008000;
+    --alert-color: #EA4335;
+
+
+    --font-size1: 32px;
+    --font-size2: 14px;
+    --font-size3: 12px;
+}
+
+
+
+body {
+    height: 100vh;
+    padding: 36px 0px;
+
+    display: grid;
+    grid-template-rows: auto auto 120px;
+}
+
+
+
+header {
+    text-align: center;
+    padding-bottom: 36px;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header .title {
+    margin-top: 14px;
+
+    font-weight: 500;
+    font-size: var(--font-size1);
+    color: var(--color-primary);
+}
+
+
+
+
+
+
+
+
+
+
+.cards .container {
+    text-align: center;
+}
+
+.cards .card {
+    width: 200px;
+    height: 100px;
+    margin: 6px;
+
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+
+    background-color: var(--bg-primary);
+}
+
+.cards .card:hover {
+    background-color: var(--bg-primary-hover);
+}
+
+.cards .card a {
+    width: 100%;
+    height: 100%;
+    padding: 22px;
+
+    display: block;
+    text-decoration: none;
+}
+
+.cards .card a .iconify {
+    width: 32px;
+    height: 32px;
+    color: var(--bg-third);
+}
+
+.cards .card a p {
+    font-weight: bold;
+    color: var(--bg-third);
+}
+
+
+
+
+
+
+
+
+
+
+footer {   
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+footer .container {
+    padding: 0px 32px;
+}
+footer .copyright {
+    text-align: center;
+}
+
+footer .copyright p {
+    margin-bottom: 0px;
+
+    font-size: var(--font-size3);
+    color: var(--color-secondary);
+}
+
+footer .copyright p a {
+    text-decoration: none;
+}
+
+footer .copyright img {
+    margin: 12px 0px;
+    width: 120px;
+}
